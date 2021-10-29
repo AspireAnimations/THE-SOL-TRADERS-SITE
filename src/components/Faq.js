@@ -8,12 +8,13 @@ const Faq = () => {
       <div className="main-container">
       <header>
         <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        
       </header>
-
+      
       <div className="content-container">
       
       <div className="container-one">
-     
+      
             <div class="accordion-wrapper">
             
             <div class="accordion">

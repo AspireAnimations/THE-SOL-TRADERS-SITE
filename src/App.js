@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <GlobalStyle />
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Navbar />
       <Main />
       <Cards />
@@ -24,8 +24,8 @@ function App() {
       <VisualStory />
       <Roadmap />
       <Faq />
-      {/* <Join />
-      <Footer /> */}
+      <Join />
+      <Footer />
       
     </Router>
   );

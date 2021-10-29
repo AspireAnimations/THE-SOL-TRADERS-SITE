@@ -40,6 +40,10 @@ export const NavLogo = styled(Link)`
   img {
     margin: 15px;
   }
+
+  @media(max-width: 600px) {
+    font-size: .8rem;
+  }
 `;
 
 

@@ -6,16 +6,17 @@ const Join = () => {
   return (
     <>
       <Container>
+        <div className="main"></div>
         <h1>JOIN THE MOVEMENT</h1>
         <h3>Price : 1 SOL</h3>
-        <input type="text" value="" />
+       <TextInput type="text" placeholder="5000/5000"/>
         <button>MINT</button>
         <Zoom left>
         <Card>
           <Text>
           <h1>JOIN THE COMMUNITY</h1>
           <p>Have any questions about the project? Join the discord for more information</p>
-          <button className="cardbtn">JOIN THE SOLSTREET FAMILY ON DISCORD</button>
+          <button className="cardbtn"><a href="https://discord.com/invite/zbrq8KUmaV" target="_blank">JOIN THE SOLSTREET FAMILY ON DISCORD</a> </button>
           </Text>
           <Img>
           <img src="cardimg.png" alt="" />
@@ -40,21 +41,14 @@ justify-content: center;
 h1 {
   font-size: 37px;
   margin: 1rem;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 24px;
 }
 
-input {
-  font-size: 16px;
-    min-height: 47px;
-    padding: 6px 16px;
-    border-radius: 4px;
-    width: 420px;
-    border: none;
-    margin: 2rem;
-}
+
 
 button{
   font-size: 18px ;
@@ -69,8 +63,33 @@ button{
    border: none;
    color: #fff;
    cursor: pointer;
+
+   a {
+     text-decoration: none;
+     color: #fff;
+   }
 }
 
+@media(max-width: 600px) {
+  flex-direction: column;
+  text-align: center;
+}
+
+`
+
+const TextInput = Styled.textarea`
+font-size: 16px;
+    min-height: 37px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    width: 420px;
+    border: none;
+    margin: 2rem;
+    outline: none;
+
+    @media(max-width: 600px) {
+      width: 90%;
+    }
 `
 
 const Card = Styled.div`
@@ -89,9 +108,25 @@ h1 {
 
 p {
   font-size: 20px;
-  padding: 0 1.2rem;
   font-weight: 600;
   max-width: 80%;
+}
+
+@media(max-width: 600px) {
+  flex-direction: column;
+
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+  p {
+    margin-left: 40px;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: -4.5%;
+  }
 }
 `
 
@@ -107,6 +142,12 @@ button {
     padding: 18px 35px 18px 35px;
     margin-top: 1.8rem;
     margin-left: 1rem;
+
+    @media(max-width: 600px) {
+      padding: 10px;
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
     
 }
 `;
