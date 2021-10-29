@@ -42,7 +42,7 @@ export const NavLogo = styled(Link)`
   }
 
   @media(max-width: 600px) {
-    font-size: .8rem;
+   span { display: none }
   }
 `;
 

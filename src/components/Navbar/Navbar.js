@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
+import { Link } from 'react-scroll'
 import {
   Nav,
   NavbarContainer,
@@ -37,28 +38,32 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
           <NavbarContainer>
+          <Link to="home" >
             <NavLogo to='/' onClick={closeMobileMenu}>
               <img src="logo.png" alt="" width="100px" height="50px"/>
-              THE SOL TRADERS CLUB
+              <span>THE SOL TRADERS CLUB</span>
             </NavLogo>
+            </Link>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
+              <Link to="home" >
                 <NavLinks to='/' onClick={closeMobileMenu}>
                   HOME
                 </NavLinks>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLinks to='/story' onClick={closeMobileMenu}>
-                   STORY
-                </NavLinks>
+              <Link to="story" ><NavLinks to='/story' >
+                  STORY
+                </NavLinks></Link>
               </NavItem>
               <NavItem>
-                <NavLinks to='/products' onClick={closeMobileMenu}>
+              <Link to="mint" ><NavLinks to='/mint' >
                   MINT
-                </NavLinks>
+                </NavLinks></Link>
               </NavItem>
               
             </NavMenu>

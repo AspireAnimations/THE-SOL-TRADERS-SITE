@@ -97,7 +97,7 @@ header h1 {
   margin: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .content-container {
     flex-direction: column;
     overflow: hidden;

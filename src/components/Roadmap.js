@@ -81,6 +81,10 @@ h1 {
 @media(max-width: 600px) {
   img {display: none;}
   flex-direction: column;
+  overflow: hidden;
+}
+
+
 }
 
 
@@ -107,7 +111,9 @@ margin-right: 10rem;
 }
 `
 const Img = Styled.div`
-
+@media(max-width: 1200px) {
+  width: 100%;
+  overflow: hidden;
 `
 
 const CardOne = Styled.div`

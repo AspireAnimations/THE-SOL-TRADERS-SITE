@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import ScrollToTop from './components/ScrollToTop';
 import { Navbar, Footer } from './components';
 import Main from './components/Main';
 import Cards from './components/Cards';
@@ -16,7 +15,6 @@ function App() {
   return (
     <Router>
       <GlobalStyle />
-      <ScrollToTop />
       <Navbar />
       <Main />
       <Cards />
@@ -26,7 +24,6 @@ function App() {
       <Faq />
       <Join />
       <Footer />
-      
     </Router>
   );
 }

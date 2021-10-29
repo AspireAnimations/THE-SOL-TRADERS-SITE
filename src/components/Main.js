@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 const Main = () => {
   return (
     <>
-      <Container>
+      <Container id="home">
       <Fade left>
         <Info>
          <h1>MINT YOUR WAY INTO THE ELITE AT THE SOL TRADERS CLUB</h1>
@@ -33,14 +33,18 @@ background: #101522;
 display: flex;
 align-items: center;
 justify-content: center;
+overflow-x: hidden;
 
 @media(max-width: 600px) {
   flex-direction: column-reverse;
   width: 100%;
+  overflow-x: hidden;
 
   img {
     max-width: 100%;
   }
+}
+
 }
 
 `

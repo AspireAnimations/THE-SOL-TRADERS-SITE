@@ -5,7 +5,7 @@ import Zoom from 'react-reveal/Zoom';
 const Join = () => {
   return (
     <>
-      <Container>
+      <Container id="mint">
         <div className="main"></div>
         <h1>JOIN THE MOVEMENT</h1>
         <h3>Price : 1 SOL</h3>

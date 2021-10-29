@@ -142,10 +142,13 @@ export const SocialLogo = styled(Link)`
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+
+  
 `;
 
 export const SocialIcon = styled(FaMagento)`
   margin-right: 10px;
+  
 `;
 
 export const WebsiteRights = styled.small`
@@ -158,9 +161,15 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
+
+  
 `;
 
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+
+  &:hover {
+    color: #00FFA3;
+  }
 `;
