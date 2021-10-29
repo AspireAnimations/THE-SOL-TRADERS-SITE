@@ -37,7 +37,7 @@ const Cards = () => {
 
 
 const Container = Styled.section`
-max-width: 100vw;
+max-width: 100%;
 height: 452px;
 display: flex;
 text-align: center;
@@ -47,6 +47,12 @@ padding: 60px;
 border-radius: 20px;
 color: #000;
 background: #fff;
+
+@media(max-width: 600px) {
+  flex-direction: column;
+  height: 100%;
+}
+
 `
 
 const Card = Styled.div`
@@ -55,12 +61,18 @@ height: 312px;
 h1 {
   font-size: 28px;
   padding: 15px;
+  font-weight: bold;
 }
 p {
   font-size: 18px;
   line-height: 1.5rem;
   padding: 20px;
 }
+
+@media(max-width: 600px) {
+  margin-top: 40px;
+}
+
 `
 
 export default Cards

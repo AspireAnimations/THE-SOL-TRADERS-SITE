@@ -34,6 +34,15 @@ display: flex;
 align-items: center;
 justify-content: center;
 
+@media(max-width: 600px) {
+  flex-direction: column-reverse;
+  width: 100%;
+
+  img {
+    max-width: 100%;
+  }
+}
+
 `
 
 const Info = Styled.div`

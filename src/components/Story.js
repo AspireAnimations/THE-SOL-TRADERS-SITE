@@ -36,6 +36,10 @@ P {
   line-height: 2rem;
   max-width: 1100px;
 }
+
+@media(max-width: 600px) {
+  padding: 1rem;
+}
 `
 
 const Points = Styled.div`
@@ -55,6 +59,11 @@ img {
   margin-right: 10px;
 }
 
+@media(max-width: 600px) {
+  flex-direction: column;
+  width: 100%;
+  text-align: start;
+}
 
 `
 

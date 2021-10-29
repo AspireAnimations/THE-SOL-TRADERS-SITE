@@ -96,3 +96,15 @@ header h1 {
 .accordion-wrapper {
   margin: 1rem;
 }
+
+@media (max-width: 600px) {
+  .content-container {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .accordion-wrapper {
+    width: 330px;
+    overflow: hidden;
+  }
+}

@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <GlobalStyle />
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Navbar />
       <Main />
       <Cards />
@@ -24,13 +24,9 @@ function App() {
       <VisualStory />
       <Roadmap />
       <Faq />
-      <Join />
-      <Footer />
-      <Switch>
-        <Route path='/story'exact component={Story} />
-        <Route path='/mint' component={Join} />
-        
-      </Switch>
+      {/* <Join />
+      <Footer /> */}
+      
     </Router>
   );
 }

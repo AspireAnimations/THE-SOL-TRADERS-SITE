@@ -34,10 +34,19 @@ display: flex;
 align-items: center;
 justify-content: center;
 
+@media(max-width: 600px) {
+  flex-direction: column;
+  width: 100%;
+}
+
 `
 
 const Img = Styled.div`
-
+img {
+  @media(max-width: 600px) {
+  max-width: 350px;
+}
+}
 `
 const Text = Styled.div`
 max-width: 436px;
