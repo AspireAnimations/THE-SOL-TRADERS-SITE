@@ -4,7 +4,7 @@ import Styled from 'styled-components'
 const Story = () => {
   return (
     <>
-      <Container>
+      <Container id="story">
           <h1>OUR STORY</h1>
           <p>Our project stemmed from our troubles as analysts at a hedge fund, trying to make it to the big leagues. We had no way of accurately tracking our performance and having it verified. Without such verification, it would be hard for us to advance our careers. This thought, coupled with our love for art, led us to create The SOL Traders Club. The SOL Traders Club is a trading experienced offered on the Solana blockchain. Minting one of the SOL Trader NFT’s allows the user to access their own “Trading Floor,” allowing him/her to do multiple things:
           </p>

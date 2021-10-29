@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Container } from '../../globalStyles';
 
 export const Nav = styled.nav`
-  background: #fff;
+  background: #000;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  color: #000;
+  color: #fff;
   font-weight: bold;
   justify-self: flex-start;
   cursor: pointer;
@@ -32,7 +32,17 @@ export const NavLogo = styled(Link)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+
+  &:hover {
+    color: #fff;
+  }
+
+  img {
+    margin: 15px;
+  }
 `;
+
+
 
 export const NavIcon = styled(FaMagento)`
   margin-right: 0.5rem;
@@ -77,7 +87,7 @@ export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
 
   &:hover {
-    border-bottom: 2px solid #4b59f7;
+    border-bottom: 2px solid #00FFA3;
   }
 
   @media screen and (max-width: 960px) {
@@ -100,13 +110,17 @@ export const NavItemBtn = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
   font-weight: bold;
+  
+  &:hover {
+    color: #00FFA3;
+  }
 
   @media screen and (max-width: 960px) {
     text-align: center;
@@ -115,7 +129,7 @@ export const NavLinks = styled(Link)`
     display: table;
 
     &:hover {
-      color: #4b59f7;
+      color: #00FFA3;
       transition: all 0.3s ease;
     }
   }

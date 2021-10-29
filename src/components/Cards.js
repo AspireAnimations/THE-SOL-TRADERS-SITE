@@ -45,6 +45,8 @@ justify-content: center;
 align-items: center;
 padding: 60px;
 border-radius: 20px;
+color: #000;
+background: #fff;
 `
 
 const Card = Styled.div`

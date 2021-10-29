@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Button } from '../../globalStyles';
 import {
   Nav,
   NavbarContainer,
   NavLogo,
-  NavIcon,
   MobileIcon,
   NavMenu,
   NavItem,
-  NavItemBtn,
   NavLinks,
-  NavBtnLink
 } from './Navbar.elements';
 
 function Navbar() {
@@ -42,7 +38,7 @@ function Navbar() {
         <Nav>
           <NavbarContainer>
             <NavLogo to='/' onClick={closeMobileMenu}>
-              
+              <img src="logo.png" alt="" width="100px" height="50px"/>
               THE SOL TRADERS CLUB
             </NavLogo>
             <MobileIcon onClick={handleClick}>
@@ -55,8 +51,8 @@ function Navbar() {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/services' onClick={closeMobileMenu}>
-                  STORY
+                <NavLinks to='/story' onClick={closeMobileMenu}>
+                   STORY
                 </NavLinks>
               </NavItem>
               <NavItem>

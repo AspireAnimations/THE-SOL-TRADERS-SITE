@@ -10,7 +10,7 @@ import Story from './components/Story';
 import VisualStory from './components/VisualStory';
 import Roadmap from './components/Roadmap';
 import Join from './components/Join';
-import Faq from './components/Faq'
+import Faq from './components/Faq';
 
 function App() {
   return (
@@ -26,6 +26,11 @@ function App() {
       <Faq />
       <Join />
       <Footer />
+      <Switch>
+        <Route path='/story'exact component={Story} />
+        <Route path='/mint' component={Join} />
+        
+      </Switch>
     </Router>
   );
 }
