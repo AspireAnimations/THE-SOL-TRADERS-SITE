@@ -81,7 +81,6 @@ h1 {
 @media(max-width: 600px) {
   img {display: none;}
   flex-direction: column;
-  overflow: hidden;
 }
 
 
