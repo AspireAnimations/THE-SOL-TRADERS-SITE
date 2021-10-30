@@ -40,7 +40,7 @@ function Navbar() {
           <NavbarContainer>
           <Link to="home" >
             <NavLogo to='/' onClick={closeMobileMenu}>
-              <img src="logo.png" alt="" width="100px" height="50px"/>
+              <img src="logo.png" alt="" width="120px" height="60px"/>
               <span>THE SOL TRADERS CLUB</span>
             </NavLogo>
             </Link>
@@ -56,12 +56,12 @@ function Navbar() {
                 </Link>
               </NavItem>
               <NavItem>
-              <Link to="story" ><NavLinks to='/story' >
+              <Link to="story" ><NavLinks to='/story'onClick={closeMobileMenu} >
                   STORY
                 </NavLinks></Link>
               </NavItem>
               <NavItem>
-              <Link to="mint" ><NavLinks to='/mint' >
+              <Link to="mint" ><NavLinks to='/mint' onClick={closeMobileMenu} >
                   MINT
                 </NavLinks></Link>
               </NavItem>
