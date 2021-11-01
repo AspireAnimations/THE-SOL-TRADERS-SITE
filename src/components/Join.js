@@ -7,6 +7,7 @@ const Join = () => {
     <>
       <Container id="mint">
         <div className="main"></div>
+        <img src="sol-traders.png" alt="" />
         <h1>JOIN THE MOVEMENT</h1>
         <h3>Price : 1 SOL</h3>
        <TextInput type="text" placeholder="5000/5000"/>
@@ -14,6 +15,7 @@ const Join = () => {
         <Zoom left>
         <Card>
           <Text>
+          
           <h1>JOIN THE COMMUNITY</h1>
           <p>Have any questions about the project? Join the discord for more information</p>
           <button className="cardbtn"><a href="https://discord.com/invite/zbrq8KUmaV" target="_blank">JOIN THE SOLSTREET FAMILY ON DISCORD</a> </button>
