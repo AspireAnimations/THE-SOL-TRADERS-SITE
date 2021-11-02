@@ -40,7 +40,7 @@ function Navbar() {
           <NavbarContainer>
           <Link to="home" >
             <NavLogo to='/' onClick={closeMobileMenu}>
-              <img src="logo.png" alt="" width="120px" height="60px"/>
+              <img src="logo.png" alt="" width="130px" height="65px"/>
               <span>THE SOL TRADERS CLUB</span>
             </NavLogo>
             </Link>
